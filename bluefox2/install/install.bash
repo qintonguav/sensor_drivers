@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 
-CURRENT_DIR=$(pwd)
 REPO_NAME=mvimpact_acquire
-CLONE_DIR=/tmp
-
-cd ${CLONE_DIR}
-git clone https://github.com/versatran01/${REPO_NAME}.git
 cd ${REPO_NAME}
 PLATFORM=$(uname -i)
 if [[ ${PLATFORM} == "x86_64" ]] ; then
@@ -19,9 +14,4 @@ elif [[ ${PLATFORM} == "armv7l" ]]; then
 else
     echo "Unknown platform ${PLATFORM}"
 fi
-
-echo "Cleaning up..."
-cd ${CLONE_DIR}
-rm -rf ${REPO_NAME}
-cd ${CURRENT_DIR}
 echo "Done."
