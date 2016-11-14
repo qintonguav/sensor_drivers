@@ -1,0 +1,2 @@
+rosrun camera_calibration cameracalibrator.py --size 11x8 --square 0.07 image:=/mv_25001559/image_raw
+

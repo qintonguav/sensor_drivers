@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <name>imu_3dm_gx4</name>
+  <version>0.0.2</version>
+  <description>Driver for Microstrain 3DM-GX4-25 IMU</description>
+
+  <maintainer email="gcross.code@icloud.com">gcross</maintainer>
+  <author>Gareth Cross</author>
+  <license>Apache 2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <buildtool_depend>message_generation</buildtool_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <build_depend>diagnostic_updater</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>galt_common</build_depend>
+
+  <run_depend>diagnostic_updater</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>galt_common</run_depend>
+
+  <export>
+  </export>
+</package>
