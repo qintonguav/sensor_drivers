@@ -1,6 +1,6 @@
 <launch>
     <!-- Common Interface -->
-    <arg name="device" default = "25000049"/>
+    <arg name="device" default = "25001529"/>
     <arg name="rate" default="30"/>
 
     <!-- Camera Settings -->
@@ -16,7 +16,7 @@
     <arg name="expose_us" default="8000"/>
     <arg name="agc" default="true"/>
     <arg name="gain_db" default="0.0"/>
-    <arg name="cbm" default="3"/>
+    <arg name="cbm" default="0"/>
     <arg name="ctm" default="1"/>
     <arg name="dcfm" default="0"/>
     <arg name="hdr" default="false"/>
