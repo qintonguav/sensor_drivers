@@ -1,0 +1,4 @@
+<launch>
+  <node name="camera" pkg="usb_cam" type="usb_cam_node" output="screen" >
+  </node>
+</launch>
