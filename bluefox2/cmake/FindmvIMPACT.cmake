@@ -1,5 +1,5 @@
 # FindmvIMPACT.cmake - Find mvIMPACT sdk, version >= 4.
-# Modified from https://github.com/KumarRobotics/bluefox2/blob/master/cmake/FindmvIMPACT.cmake
+# Modified from FindEigen.cmake by alexs.mac@gmail.com  (Alex Stewart)
 #
 # This module defines the following variables:
 #
@@ -67,12 +67,12 @@ endmacro(mvIMPACT_REPORT_NOT_FOUND)
 get_filename_component(BLUEFOX2_DIR ${CMAKE_CURRENT_SOURCE_DIR} REALPATH)
 list(APPEND mvIMPACT_CHECK_INCLUDE_DIRS
     /opt/mvIMPACT_acquire
-    /opt/mvIMPACT_Acquire
+    ${BLUEFOX2_DIR}/mvIMPACT/include
     )
 execute_process(COMMAND uname -m COMMAND tr -d '\n' OUTPUT_VARIABLE ARCH)
 list(APPEND mvIMPACT_CHECK_LIBRARY_DIRS
     /opt/mvIMPACT_acquire/lib/${ARCH}
-    /opt/mvIMPACT_Acquire/lib/${ARCH}
+    ${BLUEFOX2_DIR}/mvIMPACT/lib/${ARCH}
     )
 
 # Check general hints
