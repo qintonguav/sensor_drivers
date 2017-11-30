@@ -16,7 +16,7 @@ catkin_package()
 # include boost
 find_package(Boost REQUIRED)
 link_directories(${Boost_LIBRARY_DIR})
-include_directories(${Boost_INCLUDE_DIR})
+include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
 
 add_definitions("-std=c++11 -Wall")
 

@@ -6,3 +6,4 @@ cd bluefox2/install/
 roslaunch bluefox2 single_node.launch
 rosrun camera_calibration cameracalibrator.py --size 11x8 --square 0.07 image:=/mv_25001559/image_raw
 ./a.out -w 11 -h 8 -s 0.07 -o camera.yml -op -oe -su image_list.xml
+rosrun camera_model Calibration -w 9 -h 8 -s 70 -i calibrationdata
